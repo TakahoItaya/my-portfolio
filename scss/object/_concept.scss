@@ -1,0 +1,58 @@
+.concept {
+    background-image: url(../image/concept.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.658);
+    background-blend-mode: lighten;
+    padding: 100px 0 50px 0;
+    @include overTab {
+        padding: 100px 0 100px 0;
+    }
+}
+.concept-inner {
+}
+.concept-cont {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    @include overTab {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.concept-item {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 15px;
+    + .concept-item {
+        @include overTab {
+            margin-left: 20px;
+        }
+    }
+    .text {
+    }
+    .font {
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        padding-top: 10px;
+        text-align: center;
+        font-weight: bold;
+        @include overTab {
+            font-size: 26px;
+        }
+    }
+    .concept-desc {
+        text-align: center;
+        font-size: 12px;
+        padding-top: 20px;
+        font-weight: bold;
+        word-break: keep-all;
+        @include overTab {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.flow {
+    min-height: 100vh;
+    margin-right: 30px;
+    margin-left: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../image/flow.jpg);
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.658);
+    background-blend-mode: lighten;
+    height: 100%;
+    padding: 100px 0 50px 0;
+    @include overTab {
+        padding: 100px 0 100px 0;
+
+        background-position: center;
+    }
+
+    .flow-inner {
+    }
+    .flow-cont {
+        margin-top: 30px;
+        @include overTab {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .flow-list {
+        padding: 0;
+
+        > li {
+            list-style-type: none;
+            position: relative;
+            &:not(:last-child) {
+                margin-bottom: 40px;
+                dl::before {
+                    content: "";
+                    border: solid transparent;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    border-width: 22px;
+                    border-top-color: rgb(107, 144, 219);
+                }
+                dl::after {
+                    content: "";
+                    border: solid transparent;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%);
+                    border-width: 20px;
+                    border-top-color: #fff;
+                }
+            }
+            &:not(:first-child)::before {
+                content: "";
+                height: 60px;
+                display: block;
+                border-left: 4px dotted #e5e5e5;
+                position: absolute;
+                top: -40px;
+                left: -webkit-calc(10% + 30px - 2px);
+                left: calc(10% + 30px - 2px);
+                z-index: 10;
+            }
+        }
+        dl {
+            width: auto;
+            padding: 10px 15px;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border: 2px solid rgb(107, 144, 219);
+            border-radius: 10px;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.623);
+            @include overTab {
+                padding: 20px 30px;
+                display: flex;
+                display: -webkit-box;
+                display: -ms-flexbox;
+            }
+        }
+        dt {
+            font-size: 14px;
+            font-weight: 600;
+            color: rgb(107, 144, 219);
+            -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+            margin-right: 2vw;
+            text-align: center;
+            @include overTab {
+                font-size: 12px;
+                width: 150px;
+            }
+            .icon {
+                width: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 12px;
+                color: #fff;
+                background: rgb(107, 144, 219);
+                background: -moz-linear-gradient(
+                    left,
+                    rgba(107, 144, 219, 1) 0%,
+                    rgba(102, 213, 233, 1) 100%
+                );
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(107, 144, 219, 1) 0%,
+                    rgba(102, 213, 233, 1) 100%
+                );
+                background: linear-gradient(
+                    to right,
+                    rgba(107, 144, 219, 1) 0%,
+                    rgba(102, 213, 233, 1) 100%
+                );
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
+                padding: 5px 10px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                display: block;
+                border-radius: 20px;
+                position: relative;
+                @include overTab {
+                    width: initial;
+                    margin-top: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+        dd {
+            margin-left: 0;
+            font-size: 17px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            word-break: keep-all;
+            text-align: center;
+            font-weight: bold;
+
+            @include overTab {
+                font-size: 15px;
+
+                word-break: normal;
+                text-align: left;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

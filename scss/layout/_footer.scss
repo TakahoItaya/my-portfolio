@@ -1,0 +1,37 @@
+.footer {
+    padding-top: 20px;
+    background-color: lightblue;
+    @include overTab {
+        padding-top: 40px;
+    }
+    .inner {
+    }
+    .nav-wrap {
+    }
+    .nav-list {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item {
+        + .nav-item {
+            margin-left: 10px;
+            @include overTab {
+                margin-left: 20px;
+            }
+        }
+        a {
+            font-size: 14px;
+        }
+        @include overTab {
+        }
+    }
+    .copyright {
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 10px;
+        @include overTab {
+            padding-top: 40px;
+        }
+    }
+}

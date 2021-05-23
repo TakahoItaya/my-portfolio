@@ -1,0 +1,136 @@
+.top {
+    background-image: url(../image/top-image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    padding: 200px 0 50px 0;
+    @include overTab {
+        padding: 300px 0 400px 0;
+    }
+}
+main {
+}
+.top-title {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    padding-bottom: 50px;
+    @include overTab {
+        font-size: 6vw;
+        padding-bottom: 0;
+    }
+}
+.top-subtitle {
+    text-align: center;
+    color: #fff;
+    font-size: 4vw;
+    @include overTab {
+        padding-top: 120px;
+        font-size: 6vw;
+    }
+}
+.profile {
+    background-image: url(../image/profile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.479);
+    background-blend-mode: lighten;
+    height: 100%;
+    padding: 100px 0 100px 0;
+}
+.cmn-title {
+    text-align: center;
+
+    font-size: 34px;
+    font-weight: bold;
+}
+.about-me {
+}
+.profile-image {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 250px;
+    @include overTab {
+        width: 450px;
+    }
+
+    img {
+        border-radius: 50%;
+        height: 250px;
+        @include overTab {
+            height: 400px;
+        }
+    }
+}
+.profile-text {
+    text-align: center;
+    padding-top: 40px;
+    .my-name {
+        font-size: 12px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.623);
+        border-radius: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        @include overTab {
+            margin-right: 60px;
+            margin-left: 60px;
+            padding-top: 30px;
+            font-size: 30px;
+        }
+    }
+
+    .greeting {
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.623);
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px;
+        line-height: 2;
+
+        @include overTab {
+            margin-left: 60px;
+            margin-right: 60px;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            font-size: 20px;
+        }
+    }
+    .background-title {
+        padding-top: 40px;
+        font-weight: bold;
+        font-size: 24px;
+        @include overTab {
+            font-size: 28px;
+        }
+    }
+    .background-desc {
+        line-height: 2;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.623);
+        border-radius: 15px;
+        margin-top: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        word-break: keep-all;
+        @include overTab {
+            font-size: 20px;
+            margin-right: 60px;
+            margin-left: 60px;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.service {
+    background-image: url(../image/service.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.658);
+    background-blend-mode: lighten;
+    padding: 100px 0 50px 0;
+    @include overTab {
+        padding: 100px 50px 100px 50px;
+    }
+    .service-inner {
+    }
+    .service-cont {
+        padding-top: 40px;
+        @include overTab {
+            margin-right: 40px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .service-item {
+            background-color: rgba(255, 255, 255, 0.623);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 0 20px 20px 20px;
+            + .service-item {
+                @include overTab {
+                    margin-left: 20px;
+                }
+            }
+            .service-text {
+            }
+            .service-title {
+                text-align: center;
+                font-size: 24px;
+                padding-top: 20px;
+                font-weight: bold;
+                @include overTab {
+                    font-size: 2vw;
+                }
+            }
+            .service-desc {
+                text-align: center;
+                font-size: 12px;
+                padding-top: 20px;
+                font-weight: bold;
+                word-break: keep-all;
+                @include overTab {
+                    font-size: 1vw;
+                }
+            }
+            .service-price {
+                text-align: center;
+                font-size: 12px;
+                padding-top: 40px;
+                font-weight: bold;
+                @include overTab {
+                    font-size: 1.2vw;
+                    word-break: keep-all;
+                }
+            }
+            .service-image {
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                img {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+    .service-explanation {
+        text-align: center;
+        font-size: 14px;
+        padding-top: 30px;
+        font-weight: bold;
+        @include overTab {
+            font-size: 20px;
+        }
+    }
+}
